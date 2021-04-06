@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>HTML Form</title>
+</head>
+<body>
+    <div class="container">
+        <form action="https://formspree.io/jnavarro0789@gmail.com" method="POST">
+            <h1>Contact</h1>
+            <p>Enter information below so we can get in touch.</p>
+            <div class="name">
+                <input id="first-name" type="text" name="first-name" placeholder="First name" required>
+                <label for="first-name"></label>
+                <input id="last-name" type="text" name="last-name" placeholder="Last name">
+                <label for="last-name"></label>
+            </div>
+            <div class="contact">
+                <input id="email" type="email" name="email" placeholder="Email" required>
+                <label for="email"></label>
+                <input id="phone" type="text" name="phone" pattern="\d{3}[\-]\d{3}[\-]\d{4}" placeholder="xxx-xxx-xxxx">
+                <label for="phone"></label>
+            </div>
+            <p>Additional comments</p>
+            <textarea id="message" name="message" maxLength="250" placeholder="250 Character limit"></textarea>
+            <label for="message"></label>
+            <div class="buttons">
+                <button type="submit">Submit</button>
+                <button type="reset">Reset</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
